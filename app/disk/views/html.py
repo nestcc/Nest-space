@@ -1,10 +1,17 @@
+'''
+Author: Nestcc
+Date: 2020-08-10 10:40:04
+LastEditors: Nestcc
+LastEditTime: 2021-03-19 13:51:49
+Description:  < file content > 
+'''
 from django.shortcuts import render
 from disk.models import NepDiskFile
 from django.views.generic import View, TemplateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db import transaction
 import random, string
-from django.http.response import HttpResponsePermanentRedirect, HttpResponseRedirect
+from django.http.response import HttpResponse, HttpResponsePermanentRedirect, HttpResponseRedirect
 
 
 # Create your views here.
@@ -38,6 +45,8 @@ class MyHome(LoginRequiredMixin, View):
             except Exception as any_exec:
                 print(repr(any_exec))
                 return HttpResponseRedirect("/disk/home/")
+        else :
+            return HttpResponse("not file")
 
 
 class Display(View):
