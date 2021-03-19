@@ -1,0 +1,19 @@
+{% extends "disk/base.html" %} {% block content %} {% for i in content %}
+    <div class="file-content">
+        <div class="file-name" style="width:20%;">{{ i.name_display }}</div>
+        <div class="file-size" style="width:10%;">{{ i.file.size }} B</div>
+        <div class="file-date" style="width:5%;">{{ i.total_count }}</div>
+        <div class="file-date" style="width:20%;">{{ i.upload_time }}</div>
+        <div
+                class="file-link"
+                style="width:30%; padding-right: 80px; text-overflow: ellipsis; overflow: hidden;"
+        >
+    <span>
+      https://{{ host }}/s/{{ i.code }}
+    </span>
+        </div>
+        <a href="/static/media/{{ i.file.url }}" style="color:#FFF;" DOWNLOAD="{{ i.name_display }}">
+            <button>Download</button>
+        </a>
+    </div>
+{% endfor %} {% endblock %}
