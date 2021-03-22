@@ -13,3 +13,17 @@ build/*
 # jetbrains
 .idea/*
 
+# python c
+*.pyc
+
+# python cache
+__pychche__/
+
+# app migrations
+
+app/article/migrations/
+app/blog/migrations/
+app/management/migrations/
+app/user/migrations/
+app/disk/migrations/
+
