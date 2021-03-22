@@ -1,3 +1,10 @@
+<!--
+ * @Author: Nestcc
+ * @Date: 2020-08-10 10:40:04
+ * @LastEditors: Nestcc
+ * @LastEditTime: 2021-03-22 16:58:54
+ * @Description:  < file content > 
+-->
 {% extends "disk/base.html" %} {% block content %} {% for each in content %}
     <div class="file-content">
         <a href="/disk/delete/{{ each.id }}/" style="color:#FFF;">
@@ -9,7 +16,7 @@
         <div class="file-date" style="width:20%;">{{ each.upload_time }}</div>
         <div class="file-link" style="width:30%; padding-right: 80px; text-overflow: ellipsis; overflow: hidden;">
             <span>
-              http://{{ host }}/s/{{ each.code }}/
+              http://{{ host }}/disk/s/{{ each.code }}/
             </span>
         </div>
         <a href="/static/media/{{ each.file.url }}" style="color:#FFF;" DOWNLOAD="{{ each.name_display }}">

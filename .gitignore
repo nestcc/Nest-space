@@ -27,3 +27,8 @@ app/management/migrations/*
 app/user/migrations/*
 app/disk/migrations/*
 
+
+# media files
+static/media/article_image/*
+static/media/disk/*
+static/media/user_icon/*

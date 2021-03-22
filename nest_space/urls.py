@@ -1,3 +1,10 @@
+'''
+Author: Nestcc
+Date: 2020-08-10 10:40:04
+LastEditors: Nestcc
+LastEditTime: 2021-03-22 16:56:33
+Description:  < file content > 
+'''
 """netdisk URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
