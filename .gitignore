@@ -17,13 +17,13 @@ build/*
 *.pyc
 
 # python cache
-__pychche__/
+__pycache__/
 
 # app migrations
 
-app/article/migrations/
-app/blog/migrations/
-app/management/migrations/
-app/user/migrations/
-app/disk/migrations/
+app/article/migrations/*
+app/blog/migrations/*
+app/management/migrations/*
+app/user/migrations/*
+app/disk/migrations/*
 
